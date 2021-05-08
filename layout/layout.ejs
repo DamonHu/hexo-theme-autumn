@@ -5,7 +5,7 @@
 <body style="background: <%- theme.background %>">
     <div class="container">
         <%- partial('_partial/header') %>
-        <% if (is_home()){ %>
+        <% if (is_home() || theme.postWidget) { %>
             <main class="main">
                 <%- body %>
             </main>

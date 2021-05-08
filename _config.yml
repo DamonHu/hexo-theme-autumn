@@ -20,3 +20,6 @@ widgets:
 
 # Set the first image in post to cover
 auto_cover: true
+
+# post page show widget
+postWidget: false
