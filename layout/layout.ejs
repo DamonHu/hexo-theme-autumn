@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<%- partial('_partial/head') %>
+<%- partial('_partial/head', {}, {cache: true}) %>
 
 <body style="background: <%- theme.background %>">
     <div class="container">
-        <%- partial('_partial/header') %>
+        <%- partial('_partial/header', {}, {cache: true}) %>
         <% if (is_home() || theme.postWidget) { %>
             <main class="main">
                 <%- body %>
@@ -12,13 +12,13 @@
             <aside class="aside">
                 <div class="close"></div>
                 <section class="aside-section">
-                    <%- partial('_widget/category') %>
+                    <%- partial('_widget/category', {}, {cache: true}) %>
                 </section>
                 <section class="aside-section">
-                    <%- partial('_widget/archive') %>
+                    <%- partial('_widget/archive', {}, {cache: true}) %>
                 </section>
                 <section class="aside-section tag">
-                    <%- partial('_widget/tag') %>
+                    <%- partial('_widget/tag', {}, {cache: true}) %>
                 </section>
             </aside>
         <% } else { %>
