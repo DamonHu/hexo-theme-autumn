@@ -60,6 +60,9 @@
             }
 
             function clickToggleAside(btn, show = true) {
+                if (btn == null) {
+                    return
+                }
                 btn.addEventListener('click', function () {
                     if (show) {
                         aside.style.display = 'block'
