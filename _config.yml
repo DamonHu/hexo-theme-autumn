@@ -23,3 +23,5 @@ auto_cover: true
 
 # post page show widget
 postWidget: false
+# use highlightjs to render
+highlightjs: true
