@@ -5,21 +5,27 @@
 <body style="background: <%- theme.background %>">
     <div class="container">
         <%- partial('_partial/header') %>
-        <main class="main">
-            <%- body %>
-        </main>
-        <aside class="aside">
-            <div class="close"></div>
-            <section class="aside-section">
-                <%- partial('_widget/category') %>
-            </section>
-            <section class="aside-section">
-                <%- partial('_widget/archive') %>
-            </section>
-            <section class="aside-section tag">
-                <%- partial('_widget/tag') %>
-            </section>
-        </aside>
+        <% if (is_home()){ %>
+            <main class="main">
+                <%- body %>
+            </main>
+            <aside class="aside">
+                <div class="close"></div>
+                <section class="aside-section">
+                    <%- partial('_widget/category') %>
+                </section>
+                <section class="aside-section">
+                    <%- partial('_widget/archive') %>
+                </section>
+                <section class="aside-section tag">
+                    <%- partial('_widget/tag') %>
+                </section>
+            </aside>
+        <% } else { %>
+            <main class="main-page">
+                <%- body %>
+            </main>
+        <% } %>
     </div>
 </body>
 
