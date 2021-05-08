@@ -9,7 +9,7 @@
 
 ## Demo
 
-[preview](http://8uf4mm.coding-pages.com/)
+[preview](https://zxkit.com/)
 
 ## Usage
 
