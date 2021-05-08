@@ -25,3 +25,4 @@ auto_cover: true
 postWidget: false
 # use highlightjs to render
 highlightjs: true
+showLineNum: true

@@ -35,8 +35,39 @@
         <link rel="stylesheet"
             href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/styles/default.min.css">
         <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/highlight.min.js"></script>
-        <script>
-            hljs.initHighlightingOnLoad();
-        </script>
+        <% if (theme.showLineNum) { %>
+            <script src="//cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js"></script>
+        <% } %>
+        <% if (theme.showLineNum) { %>
+            <script>
+                hljs.initHighlightingOnLoad();
+                hljs.initLineNumbersOnLoad();
+            </script>
+            <style>
+                /* for block of numbers */
+            .hljs-ln-numbers {
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+
+                text-align: center;
+                color: #666;
+                vertical-align: top;
+                padding-right: 5px;
+            }
+            /* for block of code */
+            .hljs-ln-code {
+                padding-left: 1em !important;
+            }
+            </style>
+        <% } else { %>
+            <script>
+                hljs.initHighlightingOnLoad();
+            </script>
+        <% } %>
+        
     <% } %>
 </header>
