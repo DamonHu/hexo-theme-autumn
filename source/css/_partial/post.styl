@@ -37,8 +37,9 @@
 
   .post-title
     margin: 0 0 .5em
-    font: 1.953em Lora 
-    color: #777
+    font: 2.5em Lora 
+    color: #333
+    font-weight: bolder
     &::after
       content: ""
       display: block
@@ -47,7 +48,7 @@
       height: 2px
       background-color: #f3f3f3  
     a
-      color: #777
+      color: #333
       text-decoration: none    
 
   .post-date
@@ -101,3 +102,33 @@
     img
       max-width: 100%
       border-radius: 4px
+    blockquote
+      border-left: 4px solid var(--theme-color,#42b983)
+      color: #858585
+      margin: 2em 0
+      padding-left: 20px
+      background-color: #f8f8f8
+      padding-top: 0.2em
+      padding-bottom: 0.2em
+    a
+      color: var(--theme-color,#f78769)
+      font-weight: 600
+    h2
+      color: #333
+      background: linear-gradient(to bottom,transparent 60%,rgba(247,135,105,0.6) 0) no-repeat
+      width: auto
+      display: table
+    h3
+      color: #525252
+    .highlight
+      background-color: #f8f8f8
+      margin-left: 0
+    .gutter
+      background-color: #BDBDBD
+      color: #fff
+      padding-right: 0.2em
+      padding-left: 0.2em
+    .code
+      padding-left: 0.6em
+    
+
