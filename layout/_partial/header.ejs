@@ -5,10 +5,13 @@
                 <%= config.title %>
             </a>
         </h3>
-        <button class="menu">menu</button>
+        <% if (is_home() || theme.postWidget) { %>
+            <button class="menu">menu</button>
+        <% } %>
     </nav>
-
-    <button class="ipad-menu menu">menu</button>
+    <% if (is_home() || theme.postWidget) { %>
+        <button class="ipad-menu menu">menu</button>
+    <% } %>
 
     <h1 class="title" id="main-title">
         <a href="<%- url_for() %>" class="logo">
