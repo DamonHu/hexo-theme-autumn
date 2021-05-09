@@ -1,0 +1,62 @@
+<footer class="footer">
+    <div class="links">
+        <ul>
+            <% for (name in theme.footerSocial) { %>
+            <li>
+                <a href="<%- url_for(theme.footerSocial[name]) %>" title="<%- name %>">
+                    <%- name %>
+                </a>
+            </li>
+            <% } %>
+        </ul>
+    </div>
+    <div class="footer-power">
+        <div>
+            Powered by <a href="https://hexo.io/zh-cn" title="hexo">Hexo</a>
+        </div>
+        <span>&nbsp&nbsp|&nbsp&nbsp</span>
+        <div>
+            Theme by <a href="https://github.com/FrontendSophie/hexo-theme-autumn" title="autumn">autumn</a>
+        </div>
+    </div>
+    <% if (theme.highlightjs) { %>
+        <!-- Highlight.js -->
+        <link rel="stylesheet"
+            href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/styles/default.min.css">
+        <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/highlight.min.js"></script>
+        <% if (theme.showLineNum) { %>
+            <script src="//cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js"></script>
+        <% } %>
+        <% if (theme.showLineNum) { %>
+            <script>
+                hljs.highlightAll();
+                hljs.initLineNumbersOnLoad();
+            </script>
+            <style>
+                /* for block of numbers */
+            .hljs-ln-numbers {
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+
+                text-align: center;
+                color: #666;
+                vertical-align: top;
+                padding-right: 5px;
+            }
+            /* for block of code */
+            .hljs-ln-code {
+                padding-left: 1em !important;
+            }
+            </style>
+        <% } else { %>
+            <script>
+                hljs.highlightAll();
+            </script>
+        <% } %>
+        
+    <% } %>
+</header>
