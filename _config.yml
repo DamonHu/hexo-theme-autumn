@@ -5,7 +5,7 @@ social:
 
 # Footer
 footerSocial:
-  email: mailto://dong765@qq.com
+  email: mailto:dong765@qq.com
   github: https://github.com/ZXKitCode
   
 # Background image, color
@@ -30,4 +30,7 @@ auto_cover: true
 postWidget: false
 # use highlightjs to render
 highlightjs: true
+highlightjsSrc: //cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/highlight.min.js
+highlightjsCss: //cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/styles/default.min.css
 showLineNum: true
+highlightNumjsSrc: //cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js
