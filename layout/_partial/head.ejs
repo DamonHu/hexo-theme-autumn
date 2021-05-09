@@ -60,7 +60,7 @@
             }
 
             function clickToggleAside(btn, show = true) {
-                if (btn == null) {
+                if (btn == null || aside == null) {
                     return
                 }
                 btn.addEventListener('click', function () {
